@@ -1,0 +1,156 @@
+/* General container styling */
+.education-container {
+  padding: 3rem;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #007bff;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 35px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #e0e0e0;
+}
+
+/* Timeline items */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.icon-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 24px;
+  transition: background 0.3s;
+}
+
+.icon-circle:hover {
+  background-color: #0056b3;
+}
+
+/* Content block for each timeline item */
+.content {
+  margin-left: 80px; /* Leave space for the icon */
+  padding: 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s, transform 0.3s;
+  width: 100%;
+  min-height: 320px; /* Set the minimum height for consistent block sizes */
+}
+
+.timeline-item:hover .content {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+/* Education logos */
+.education-logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.location,
+.GPA,
+.dates {
+  font-size: 1rem;
+  color: #777;
+  font-weight: bold; /* Bold styling */
+  margin-bottom: 0.75rem;
+}
+
+/* Make "Master of Engineering" and "Bachelor of Technology" bold */
+.degree {
+  font-size: 1.1rem;
+  font-weight: bold; /* Bold styling */
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.Specialization {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.content ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+  color: #444;
+  text-align: left;
+}
+
+/* Ensure equal heights */
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content {
+  flex: 1; /* Ensures equal width for content */
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}

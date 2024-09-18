@@ -1,0 +1,53 @@
+/* src/components/Publications.css */
+
+.publications-section {
+    background-color: #f9f9f9;
+  }
+  
+  .publications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .publication-card {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .publication-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .publication-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-card h3 a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .publication-card h3 a:hover {
+    text-decoration: underline;
+  }
+  
+  .publication-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+  }
+  
+  .publication-description {
+    margin-top: 1rem;
+  }
+  
+  .publication-description p {
+    font-size: 0.95rem;
+  }
+  
