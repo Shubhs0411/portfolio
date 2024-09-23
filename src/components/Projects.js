@@ -7,23 +7,24 @@ const projects = [
     title: 'Human Salivary Proteome (HSP) 3.0 Visualization',
     description: 'Developed interactive data visualization tools for biotech research, improving user experience and accessibility of the HSP dataset.',
     technologies: ['React', 'D3.js', 'AWS', 'Docker'],
-    github: 'https://github.com/Shubhs0411/HSP-3.0-Visualization',
+    github: 'https://github.com/JCVenterInstitute/HSPW-V3',
     demo: '', // Add live demo link if available
+  },
+  {
+    title: 'React-Portfolio',
+    description: 'A dynamic portfolio built using React, JavaScript, HTML, and CSS, showcasing my projects and skills in front-end development and design.',
+    technologies: ['React', 'Javascript', 'HTML','CSS'],
+    github: 'https://github.com/Shubhs0411/React-Portfolio', // Add GitHub link if available
+    demo: '',  // Add live demo link if available
   },
   {
     title: 'Patient Monitoring System Web Application',
     description: 'Led a team to develop a real-time prediction model for patient monitoring using YOLOv4-tiny, Mediapipe, and XGBoost.',
     technologies: ['YOLOv4-tiny', 'Mediapipe', 'XGBoost', 'Flask'],
-    github: '', // Add GitHub link if available
+    github: 'https://github.com/Shubhs0411/Patient-Monitoring-System', // Add GitHub link if available
     demo: '',  // Add live demo link if available
   },
-  {
-    title: 'Retail POS System Optimization',
-    description: 'Enhanced system reliability for a Retail POS system by resolving 42 technical anomalies, reducing downtime by 10%.',
-    technologies: ['ASP.NET Core', 'Tableau', 'SQL'],
-    github: '', // Add GitHub link if available
-    demo: '',  // Add live demo link if available
-  },
+  
   // Add more projects here
 ];
 

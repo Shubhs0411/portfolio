@@ -8,10 +8,10 @@ const HomePage = () => {
       <div className="home-content">
         <img
           src={`${process.env.PUBLIC_URL}/profile.jpeg`} // Use your JPEG file
-          alt="Shubham Laxmikant Deshmukh"
+          alt="Shubham Deshmukh"
           className="profile-photo"
         />
-        <h1>Shubham Laxmikant Deshmukh</h1>
+        <h1>Shubham Deshmukh</h1>
         <p>
           Master’s student at Virginia Tech |{' '}
           <span className="role-switcher">

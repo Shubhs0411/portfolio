@@ -81,6 +81,29 @@ section:nth-child(even) {
   color: white;
 }
 
+.resume-button {
+  position: fixed; /* Keep the button fixed on the page */
+  bottom: 20px; /* Position from the bottom */
+  right: 20px; /* Position from the right */
+  width: 70px; /* Increase width */
+  height: 70px; /* Increase height */
+  background-color: #333; /* Background color */
+  color: white; /* Text color */
+  border-radius: 50%; /* Circular shape */
+  display: flex; /* Center content */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  transition: background-color 0.3s; /* Smooth background color change */
+  font-size: 30px; /* Increase font size of the emoji */
+}
+
+.resume-button:hover {
+  background-color: #61dafb; /* Change color on hover */
+}
+
+
 .App-link {
   color: #61dafb;
 }

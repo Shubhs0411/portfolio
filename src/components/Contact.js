@@ -23,7 +23,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+    emailjs.sendForm('service_gke5phq', 'template_5u1gwet', e.target, 'mn1J8fMj_hFQnU2cB')
       .then((result) => {
         console.log(result.text);
         setIsSent(true);
@@ -74,24 +74,25 @@ const Contact = () => {
         {isSent && <p className="success-message">Your message has been sent successfully!</p>}
         {isError && <p className="error-message">Oops! Something went wrong. Please try again.</p>}
       </form>
-      
+      <h2></h2>
       <div className="social-links">
+        
         <a href="mailto:shubhamd23@vt.edu" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>
-        <a href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/shubhdesh/" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faLinkedin} />
         </a>
-        <a href="https://scholar.google.com/citations?user=your-user-id" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faGoogleScholar} />
-        </a>
-        <a href="https://github.com/your-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/Shubhs0411" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} />
         </a>
-        <a href="https://medium.com/@your-username" target="_blank" rel="noopener noreferrer">
+        <a href="https://scholar.google.co.uk/citations?view_op=list_works&hl=en&user=ezYZLzgAAAAJ" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGoogleScholar} />
+        </a>
+        <a href="https://medium.com/@shubhamdshmkh1" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faMedium} />
         </a>
-        <a href="https://devpost.com/your-profile" target="_blank" rel="noopener noreferrer">
+        <a href="https://devpost.com/Shubhs0411?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faDev} />
         </a>
       </div>
