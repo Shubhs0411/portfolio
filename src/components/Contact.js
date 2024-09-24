@@ -74,7 +74,8 @@ const Contact = () => {
         {isSent && <p className="success-message">Your message has been sent successfully!</p>}
         {isError && <p className="error-message">Oops! Something went wrong. Please try again.</p>}
       </form>
-      <h2></h2>
+      <h2 aria-hidden="true"></h2>
+
       <div className="social-links">
         
         <a href="mailto:shubhamd23@vt.edu" target="_blank" rel="noopener noreferrer">

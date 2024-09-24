@@ -42,7 +42,7 @@ function App() {
       <div ref={projectsRef}><Projects /></div>
       <div ref={contactRef}><Contact /></div>
       <a 
-        href="/assets/Shubham_Deshmukh_resume.pdf" 
+        href="/assets/Shubham_Deshmukh_Resume.pdf" 
         download 
         className="resume-button" 
         aria-label="Download Resume" 

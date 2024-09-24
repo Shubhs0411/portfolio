@@ -1,0 +1,38 @@
+
+.typing-container {
+  display: inline-block;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  
+}
+
+.role-switcher {
+  display: inline-block;
+  vertical-align: middle; /* Ensure this aligns with the text line */
+}
+
+.animated-text {
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+  font-size: 19.2px; /* Adjust size as needed */
+  vertical-align: middle; /* Aligns the text to the middle of the line */
+}
+
+.text-cursor {
+  display: inline-block;
+  width: 0.1em;
+  background-color: orange;
+  animation: blink 0.7s steps(1) infinite;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% {
+      opacity: 0;
+  }
+}
+
+.test-box {
+  border: 1px solid red;
+}

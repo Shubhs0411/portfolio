@@ -22,17 +22,13 @@
   form {
     display: flex;
     flex-direction: column;
-    max-width: 400px; /* Set a max-width for the form */
-    width: 100%; /* Make it responsive */
-   
-    
-
+    max-width: 400px; 
+    width: 100%; 
+    margin: 0 auto; 
   }
   
   .form-group {
     margin-bottom: 1rem;
-    
-    
   }
   
   label {
@@ -104,3 +100,7 @@
     color: #007bff;
   }
   
+
+  .test-box {
+    border: 1px solid red;
+  }

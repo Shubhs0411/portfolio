@@ -9,20 +9,23 @@ const projects = [
     technologies: ['React', 'D3.js', 'AWS', 'Docker'],
     github: 'https://github.com/JCVenterInstitute/HSPW-V3',
     demo: '', // Add live demo link if available
+    image: '/assets/hspw.png', // Add image path or URL
   },
   {
     title: 'React-Portfolio',
     description: 'A dynamic portfolio built using React, JavaScript, HTML, and CSS, showcasing my projects and skills in front-end development and design.',
-    technologies: ['React', 'Javascript', 'HTML','CSS'],
-    github: 'https://github.com/Shubhs0411/React-Portfolio', // Add GitHub link if available
-    demo: '',  // Add live demo link if available
+    technologies: ['React', 'Javascript', 'HTML', 'CSS'],
+    github: 'https://github.com/Shubhs0411/React-Portfolio',
+    demo: '', // Add live demo link if available
+    image: '/assets/react-portfolio.png', // Add image path or URL
   },
   {
     title: 'Patient Monitoring System Web Application',
     description: 'Led a team to develop a real-time prediction model for patient monitoring using YOLOv4-tiny, Mediapipe, and XGBoost.',
     technologies: ['YOLOv4-tiny', 'Mediapipe', 'XGBoost', 'Flask'],
-    github: 'https://github.com/Shubhs0411/Patient-Monitoring-System', // Add GitHub link if available
-    demo: '',  // Add live demo link if available
+    github: 'https://github.com/Shubhs0411/Patient-Monitoring-System',
+    demo: '', // Add live demo link if available
+    image: '/assets/pms.png', // Add image path or URL
   },
   
   // Add more projects here
@@ -35,6 +38,7 @@ const Projects = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
+            <img src={project.image} alt={project.title} className="project-image" /> {/* Added image */}
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="project-tech">
