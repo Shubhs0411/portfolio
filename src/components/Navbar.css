@@ -3,7 +3,7 @@
   background-color: #333;
   padding: 1rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Keep this for larger screens */
   align-items: center;
   position: sticky;
   top: 0;
@@ -13,24 +13,83 @@
 
 .navbar h1 {
   color: #fff;
-  cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+  cursor: pointer;
 }
 
 .navbar h1:hover {
   color: #61dafb;
 }
 
-.navbar ul {
+/* Desktop Navigation */
+.nav-links-desktop {
   display: flex;
   list-style: none;
 }
 
-.navbar ul li {
+.nav-links-desktop li {
   margin-right: 1.5rem;
   cursor: pointer;
   color: #fff;
 }
 
-.navbar ul li:hover {
+.nav-links-desktop li:hover {
   color: #61dafb;
+}
+
+/* Mobile Hamburger Icon */
+.mobile-menu-icon {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  margin-left: 40px; /* Adjust to create space from the left */
+}
+
+/* Mobile Navigation */
+@media (max-width: 932px) {
+  /* Hide desktop links in mobile view */
+  .nav-links-desktop {
+    display: none;
+  }
+
+  /* Show mobile hamburger icon */
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  /* Mobile-specific navigation */
+  .nav-links-mobile {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0; /* Keep it aligned to the right */
+    background-color: #333;
+    width: 100%;
+    height: auto; /* Adjust the height to your preference */
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    text-align: center; /* Center text within the mobile menu */
+    padding: 20px; /* Add padding to avoid text sticking to edges */
+    box-sizing: border-box; /* Ensure padding is included in the height */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+  }
+
+  .nav-links-mobile li {
+    margin: 20px 0;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .nav-links-mobile li:hover {
+    color: #61dafb;
+  }
+
+  /* Adjust navbar for mobile view */
+  .navbar {
+    justify-content: center; /* Center content in mobile */
+  }
 }
