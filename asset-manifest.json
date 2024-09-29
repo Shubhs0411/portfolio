@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-portfolio/static/css/main.88a66ae6.css",
+    "main.css": "/react-portfolio/static/css/main.013f7b47.css",
     "main.js": "/react-portfolio/static/js/main.e17e871c.js",
     "static/js/453.bb257cf5.chunk.js": "/react-portfolio/static/js/453.bb257cf5.chunk.js",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -11,12 +11,12 @@
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/react-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/vishwakarma_logo.png": "/react-portfolio/static/media/vishwakarma_logo.13454a3ded5660267c96.png",
     "index.html": "/react-portfolio/index.html",
-    "main.88a66ae6.css.map": "/react-portfolio/static/css/main.88a66ae6.css.map",
+    "main.013f7b47.css.map": "/react-portfolio/static/css/main.013f7b47.css.map",
     "main.e17e871c.js.map": "/react-portfolio/static/js/main.e17e871c.js.map",
     "453.bb257cf5.chunk.js.map": "/react-portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88a66ae6.css",
+    "static/css/main.013f7b47.css",
     "static/js/main.e17e871c.js"
   ]
 }
