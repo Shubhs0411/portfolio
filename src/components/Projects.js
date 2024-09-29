@@ -9,7 +9,7 @@ const projects = [
     technologies: ['React', 'D3.js', 'AWS', 'Docker'],
     github: 'https://github.com/JCVenterInstitute/HSPW-V3',
     demo: '', // Add live demo link if available
-    image: '/assets/hspw.png', // Add image path or URL
+    image: '/react-portfolio/assets/hspw.png', // Add image path or URL
   },
   {
     title: 'React-Portfolio',
@@ -17,7 +17,7 @@ const projects = [
     technologies: ['React', 'Javascript', 'HTML', 'CSS'],
     github: 'https://github.com/Shubhs0411/React-Portfolio',
     demo: '', // Add live demo link if available
-    image: '/assets/react-portfolio.png', // Add image path or URL
+    image: '/react-portfolio/assets/react-portfolio.png', // Add image path or URL
   },
   {
     title: 'Patient Monitoring System Web Application',
@@ -25,7 +25,7 @@ const projects = [
     technologies: ['YOLOv4-tiny', 'Mediapipe', 'XGBoost', 'Flask'],
     github: 'https://github.com/Shubhs0411/Patient-Monitoring-System',
     demo: '', // Add live demo link if available
-    image: '/assets/pms.png', // Add image path or URL
+    image: '/react-portfolio/assets/pms.png', // Add image path or URL
   },
   
   // Add more projects here
