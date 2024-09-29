@@ -154,3 +154,49 @@ p {
 .timeline-item:last-child {
   margin-bottom: 0;
 }
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px; /* Adjust the line to be closer to the edge on mobile */
+  }
+
+  .icon-circle {
+    width: 50px; /* Reduce icon size on mobile */
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .content {
+    margin-left: 70px; /* Adjust space for the icon on mobile */
+    padding: 1.5rem; /* Reduce padding for smaller screens */
+    min-height: auto; /* Remove fixed height for flexibility */
+  }
+
+  h3 {
+    font-size: 1.5rem; /* Smaller font size for titles on mobile */
+  }
+
+  .degree {
+    font-size: 1rem; /* Reduce font size for degree text */
+  }
+
+  .location,
+  .GPA,
+  .dates {
+    font-size: 0.9rem; /* Smaller font for location, GPA, and dates */
+  }
+
+  .Specialization {
+    font-size: 0.9rem; /* Smaller font size for specialization */
+  }
+
+  p {
+    font-size: 0.9rem; /* Slightly smaller paragraph font */
+  }
+
+  .timeline {
+    max-width: 100%; /* Ensure full width on mobile */
+    padding: 0 10px; /* Add some padding for better alignment */
+  }
+}
