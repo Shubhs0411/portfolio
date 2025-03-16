@@ -1,53 +1,111 @@
 /* src/components/Publications.css */
 
+/* Section Background */
 .publications-section {
-    background-color: #f9f9f9;
-  }
-  
+  background-color: #f9f9f9;
+  padding: 3rem;
+}
+
+/* Header Styling */
+.publications-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Responsive Grid Layout */
+.publications-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+/* ✅ Ensure All Cards Have Equal Height */
+.publication-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 1.5rem;
+  border-left: 5px solid #007BFF; /* ✅ Adds a colored border for emphasis */
+}
+
+/* 🔹 **Hover Effect**: Background Glow & Elevation */
+.publication-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(180deg, #ffffff, #f8f9fa);
+}
+
+/* ✅ Ensure Titles Have the Same Height */
+.publication-title {
+  min-height: 60px; /* Adjust this value for consistency */
+  display: flex;
+  align-items: center;
+}
+
+.publication-title a {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.publication-title a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* ✅ Journal, Year, & Author Styling */
+.publication-card p {
+  font-size: 1rem;
+  color: #444; /* ✅ Darker text for better readability */
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* ✅ Description Formatting */
+.publication-description {
+  margin-top: 1rem;
+}
+
+.publication-description p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
   .publications-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 1fr;
     gap: 1.5rem;
-    margin-top: 2rem;
   }
-  
-  .publication-card {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+
+  .publication-title {
+    min-height: auto; /* Adjust for smaller screens */
   }
-  
-  .publication-card:hover {
-    transform: scale(1.05);
-  }
-  
+
   .publication-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
   }
-  
-  .publication-card h3 a {
-    color: #007BFF;
-    text-decoration: none;
-  }
-  
-  .publication-card h3 a:hover {
-    text-decoration: underline;
-  }
-  
+
   .publication-card p {
-    font-size: 1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-  }
-  
-  .publication-description {
-    margin-top: 1rem;
-  }
-  
-  .publication-description p {
     font-size: 0.95rem;
   }
-  
+
+  .publication-description p {
+    font-size: 0.9rem;
+  }
+}

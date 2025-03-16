@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faGoogleScholar, faMedium, faDev } from '@fortawesome/free-brands-svg-icons'; 
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons'; // Import from free-solid-svg-icons
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import './Contact.css';
 
 const Contact = () => {
@@ -25,12 +25,16 @@ const Contact = () => {
 
     emailjs.sendForm('service_gke5phq', 'template_5u1gwet', e.target, 'mn1J8fMj_hFQnU2cB')
       .then((result) => {
-        console.log(result.text);
+        console.log("Email Sent:", result.text);
         setIsSent(true);
-        setFormData({ name: '', email: '', message: '' });
-      }, (error) => {
-        console.log(error.text);
+        setIsError(false);
+        e.target.reset(); // ✅ Clears form after success
+        setTimeout(() => setIsSent(false), 5000); // ✅ Hides success message after 5s
+      })
+      .catch((error) => {
+        console.log("Email Error:", error.text);
         setIsError(true);
+        setTimeout(() => setIsError(false), 5000); // ✅ Hides error message after 5s
       });
   };
 
@@ -71,13 +75,13 @@ const Contact = () => {
           ></textarea>
         </div>
         <button type="submit">Send</button>
-        {isSent && <p className="success-message">Your message has been sent successfully!</p>}
-        {isError && <p className="error-message">Oops! Something went wrong. Please try again.</p>}
+        {isSent && <p className="success-message">✅ Your message has been sent successfully!</p>}
+        {isError && <p className="error-message">❌ Oops! Something went wrong. Please try again.</p>}
       </form>
-      <h2 aria-hidden="true"></h2>
+
+      <div className="social-divider"></div> 
 
       <div className="social-links">
-        
         <a href="mailto:shubhamd23@vt.edu" target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faEnvelope} />
         </a>

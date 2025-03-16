@@ -1,14 +1,17 @@
 /* src/components/Contact.css */
 
+/* Section Styling */
 .contact-container {
   padding: 3rem;
   background-color: #f9f9f9;
   max-width: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08); /* ✅ Adds depth */
 }
 
 /* Heading styles */
 h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #333;
   text-align: center;
   margin-bottom: 2rem;
@@ -18,15 +21,20 @@ h2 {
   letter-spacing: 1px;
 }
 
-/* Form styling */
+/* ✅ Center Form */
 form {
   display: flex;
   flex-direction: column;
-  max-width: 400px;
+  max-width: 500px;
   width: 100%;
   margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
+/* Input Fields */
 .form-group {
   margin-bottom: 1rem;
 }
@@ -35,14 +43,16 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: #333;
 }
 
 input, textarea {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 6px;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
 textarea {
@@ -50,21 +60,30 @@ textarea {
   resize: vertical;
 }
 
+input:focus, textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* ✅ Enhanced Submit Button */
 button {
   padding: 0.8rem;
   border: none;
-  border-radius: 4px;
-  background-color: #007bff;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #007bff, #0056b3);
   color: white;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(90deg, #0056b3, #004494);
+  transform: scale(1.05);
 }
 
+/* ✅ Success & Error Messages */
 .success-message, .error-message {
   margin-top: 1rem;
   text-align: center;
@@ -79,45 +98,66 @@ button:hover {
   color: red;
 }
 
-/* Social links styles */
+/* ✅ Blue Line Above Social Links */
+.social-divider {
+  width: 60%;
+  height: 2px;
+  background-color: #007bff;
+  margin: 2rem auto 1rem;
+}
+
+/* ✅ Blue Divider with Better Spacing */
+.social-divider {
+  width: 100%; /* ✅ Wider but not full width */
+  height: 2px;
+  background-color: #007bff;
+  margin: 3rem auto 2rem; /* ✅ Adjusted spacing */
+}
+
+/* ✅ Social Links with Better Spacing */
 .social-links {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; /* Ensure icons wrap on smaller screens */
-  gap: 7rem; /* Adjust the gap to fit icons on smaller screens */
-  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 5rem; /* ✅ More spacing between icons */
+  margin-bottom: 2rem;
 }
 
-/* Individual social link icons */
 .social-links a {
   color: #333;
   font-size: 2rem;
-  transition: color 0.3s;
+  transition: transform 0.3s, color 0.3s ease-in-out;
 }
 
 .social-links a:hover {
   color: #007bff;
+  transform: scale(1.15);
 }
 
-/* Responsive styles */
-@media (max-width: 932px) {
-  /* Adjust padding for mobile screens */
+/* ✅ Mobile Responsiveness */
+@media (max-width: 768px) {
   .contact-container {
       padding: 2rem;
   }
 
-  /* Smaller font sizes for mobile */
   h2 {
       font-size: 2rem;
   }
 
-  /* Reduce gap between icons for smaller screens */
+  form {
+      max-width: 100%;
+      padding: 1.5rem;
+  }
+
+  .social-divider {
+      width: 80%;
+  }
+
   .social-links {
       gap: 2rem;
   }
 
-  /* Adjust icon size for mobile */
   .social-links a {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
   }
 }

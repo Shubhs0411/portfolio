@@ -14,15 +14,15 @@ const HomePage = () => {
         />
         <h1>Shubham Deshmukh</h1>
         <p>
-    Master’s student at Virginia Tech |{' '}
+    Master’s Student at Virginia Tech |{' '}
     <span className="role-switcher">
         <AnimatedText /> 
     </span>
     </p>
     <p>
-        A proficient professional with 2 years of industry experience and a
-        passion for Data Visualization, Machine Learning, and Full-Stack Web Development.
+        A passionate builder with 2+ years of industry experience in Data Visualization, Machine Learning, and Full-Stack Web Development—constantly coding, exploring, and pushing boundaries both in tech and life. 🚀🌍  
     </p>
+
       </div>
     </section>
   );
