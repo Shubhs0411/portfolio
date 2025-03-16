@@ -1,0 +1,121 @@
+/* src/App.css */
+
+/* Ensure smooth scrolling for the entire app */
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Disable zoom on mobile devices */
+body {
+  touch-action: manipulation;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow-x: hidden;
+}
+
+.App {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+/* Section styling for mobile responsiveness */
+section {
+  height: auto; /* Allow sections to take natural height instead of 100vh */
+  padding: 20px; /* Add padding for content spacing */
+  display: block; /* Change from flex to block for better mobile layout */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Adjusting colors for sections */
+section:nth-child(odd) {
+  background-color: #f5f5f5;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%; /* Fixes the width to full */
+  z-index: 1000;
+}
+
+.navbar h1 {
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-right: 1.5rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.navbar ul li:hover {
+  color: #61dafb;
+}
+
+/* Resume button styling */
+.resume-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #333;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  font-size: 24px; /* Decrease icon size for mobile */
+}
+
+.resume-button:hover {
+  background-color: #61dafb;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  section {
+    padding: 15px;
+    text-align: left;
+  }
+
+  .resume-button {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+}
