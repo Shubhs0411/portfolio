@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.cf1995bb.css",
-    "main.js": "/react-portfolio/static/js/main.17f97b58.js",
+    "main.js": "/react-portfolio/static/js/main.6298461e.js",
     "static/css/468.bb29540e.chunk.css": "/react-portfolio/static/css/468.bb29540e.chunk.css",
     "static/js/468.374cd13b.chunk.js": "/react-portfolio/static/js/468.374cd13b.chunk.js",
     "static/css/223.7f01bb00.chunk.css": "/react-portfolio/static/css/223.7f01bb00.chunk.css",
@@ -32,7 +32,7 @@
     "static/media/cci.png": "/react-portfolio/static/media/cci.d74883f95178d325cf92.png",
     "index.html": "/react-portfolio/index.html",
     "main.cf1995bb.css.map": "/react-portfolio/static/css/main.cf1995bb.css.map",
-    "main.17f97b58.js.map": "/react-portfolio/static/js/main.17f97b58.js.map",
+    "main.6298461e.js.map": "/react-portfolio/static/js/main.6298461e.js.map",
     "468.bb29540e.chunk.css.map": "/react-portfolio/static/css/468.bb29540e.chunk.css.map",
     "468.374cd13b.chunk.js.map": "/react-portfolio/static/js/468.374cd13b.chunk.js.map",
     "223.7f01bb00.chunk.css.map": "/react-portfolio/static/css/223.7f01bb00.chunk.css.map",
@@ -56,6 +56,6 @@
   },
   "entrypoints": [
     "static/css/main.cf1995bb.css",
-    "static/js/main.17f97b58.js"
+    "static/js/main.6298461e.js"
   ]
 }
