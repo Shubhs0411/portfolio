@@ -57,7 +57,7 @@ function App() {
       {/* Floating Resume Download Button */}
       <a 
         href={`${process.env.PUBLIC_URL}/assets/Shubham_Deshmukh_Resume.pdf`} 
-        download 
+        download="Shubham_Deshmukh_Resume.pdf" 
         className="resume-button" 
         aria-label="Download Resume"
       >
