@@ -56,13 +56,14 @@ function App() {
 
       {/* Floating Resume Download Button */}
       <a 
-        href="/assets/Shubham_Deshmukh_Resume.pdf" 
+        href={`${process.env.PUBLIC_URL}/assets/Shubham_Deshmukh_Resume.pdf`} 
         download 
         className="resume-button" 
         aria-label="Download Resume"
       >
         <i className="fa fa-file-pdf-o"></i>
       </a>
+
     </Suspense>
   );
 }
