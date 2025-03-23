@@ -58,14 +58,13 @@
 
 /* Mobile Navigation */
 @media (max-width: 932px) {
-  /* Hide desktop links in mobile view */
   .nav-links-desktop {
     display: none;
   }
 
-  /* Show mobile hamburger icon */
   .mobile-menu-icon {
     display: block;
+    margin-right: 30px; /* ✅ Pushes icon slightly left */
   }
 
   /* Mobile-specific navigation */

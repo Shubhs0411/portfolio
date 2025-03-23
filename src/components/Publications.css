@@ -18,46 +18,46 @@
 /* Responsive Grid Layout */
 .publications-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
   padding: 0 1rem;
 }
 
-/* ✅ Ensure All Cards Have Equal Height */
+/* Publication Card Styling (like Project Cards) */
 .publication-card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
   padding: 1.5rem;
-  border-left: 5px solid #007BFF; /* ✅ Adds a colored border for emphasis */
+  border-left: 5px solid #007BFF;
 }
 
-/* 🔹 **Hover Effect**: Background Glow & Elevation */
+/* Hover Effects */
 .publication-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   background: linear-gradient(180deg, #ffffff, #f8f9fa);
 }
 
-/* ✅ Ensure Titles Have the Same Height */
+/* Publication Title */
 .publication-title {
-  min-height: 60px; /* Adjust this value for consistency */
-  display: flex;
-  align-items: center;
-}
-
-.publication-title a {
   font-size: 1.4rem;
   font-weight: bold;
   color: #007BFF;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.publication-title a {
   text-decoration: none;
+  color: inherit;
   transition: color 0.3s ease-in-out;
 }
 
@@ -66,38 +66,39 @@
   text-decoration: underline;
 }
 
-/* ✅ Journal, Year, & Author Styling */
+/* Metadata & Description */
 .publication-card p {
   font-size: 1rem;
-  color: #444; /* ✅ Darker text for better readability */
+  color: #444;
   margin: 0.5rem 0;
   line-height: 1.5;
-  flex-grow: 1;
+  text-align: center;
 }
 
-/* ✅ Description Formatting */
+/* Description Paragraphs */
 .publication-description {
   margin-top: 1rem;
 }
 
 .publication-description p {
   font-size: 0.95rem;
-  margin-bottom: 0.5rem;
   color: #666;
+  margin-bottom: 0.5rem;
+  text-align: center;
 }
 
-/* ✅ Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .publications-list {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 3.5rem;
+  }
+
+  .publication-card {
+    width: 100%;
   }
 
   .publication-title {
-    min-height: auto; /* Adjust for smaller screens */
-  }
-
-  .publication-card h3 {
     font-size: 1.3rem;
   }
 

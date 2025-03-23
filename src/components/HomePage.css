@@ -24,7 +24,7 @@
   width: 320px;
   height: 320px;
   border-radius: 500%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
   object-fit: cover;
   border: 4px solid #61dafb;
@@ -77,4 +77,19 @@
 
 .test-box {
   border: 1px solid red;
+}
+@media (max-width: 768px) {
+  .profile-photo {
+    margin-top: 100px; /* ⬆️ Increase spacing from top on mobile */
+    width: 240px;
+    height: 240px;
+  }
+
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
 }
