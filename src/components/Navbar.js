@@ -23,6 +23,7 @@ const Navbar = ({ scrollToSection, refs }) => {
     const handleScroll = () => {
       const sections = [
         { ref: refs.homeRef, id: 'home' },
+        { ref: refs.aboutRef, id: 'about' },
         { ref: refs.skillsRef, id: 'skills' },
         { ref: refs.experienceRef, id: 'experience' },
         { ref: refs.educationRef, id: 'education' },
@@ -88,7 +89,7 @@ const Navbar = ({ scrollToSection, refs }) => {
         </>
       ) : (
         <ul className="nav-links-desktop">
-          {['skills', 'experience', 'education', 'publications', 'projects', 'contact'].map((section) => (
+          {['about', 'skills', 'experience', 'education', 'publications', 'projects', 'contact'].map((section) => (
             <li 
               key={section} 
               onClick={() => handleNavClick(refs[`${section}Ref`], section)}
