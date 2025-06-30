@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+# Shubham Deshmukh - Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive portfolio website built with Next.js, React, and Tailwind CSS showcasing my work as a Software Engineer, Machine Learning Engineer, and Data Engineer.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Visit my portfolio at: [https://shubhs0411.github.io/portfolio](https://shubhs0411.github.io/portfolio)
 
-### `npm start`
+## 🛠️ Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Framework**: Next.js 15 with App Router
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons, Heroicons
+- **ML Components**: TensorFlow.js
+- **Contact**: EmailJS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🏃‍♂️ Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Node.js 18+ 
+- npm or yarn
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+```bash
+git clone https://github.com/shubhs0411/portfolio.git
+cd portfolio
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Install dependencies:
+```bash
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-### `npm run eject`
+4. Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Available Scripts
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run ESLint
+- `npm run export` - Export static site
+- `npm run deploy` - Deploy to GitHub Pages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🌐 Deployment
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow:
 
-## Learn More
+1. Builds the Next.js application
+2. Exports it as static files
+3. Deploys to GitHub Pages
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Manual Deployment
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To deploy manually:
 
-### Code Splitting
+```bash
+npm run build
+# The static files will be in the 'out' directory
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 📁 Project Structure
 
-### Analyzing the Bundle Size
+```
+src/
+├── app/                 # Next.js App Router
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/         # React components
+│   ├── Hero.tsx       # Hero section
+│   ├── About.tsx      # About section
+│   ├── Skills.tsx     # Skills section
+│   ├── Projects.tsx   # Projects showcase
+│   └── Contact.tsx    # Contact form
+└── ...
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## 🔧 Configuration
 
-### Making a Progressive Web App
+- **Next.js Config**: Configured for static export with GitHub Pages
+- **Tailwind CSS**: Custom configuration with Inter font
+- **TypeScript**: Strict mode enabled
+- **ESLint**: Next.js recommended rules
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📝 License
 
-### Advanced Configuration
+This project is open source and available under the [MIT License](LICENSE).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🤝 Contributing
 
-### Deployment
+Feel free to fork this project and submit pull requests for any improvements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built with ❤️ by Shubham Deshmukh
