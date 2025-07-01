@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 import { FaEnvelope, FaMapMarkerAlt, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa'
 import { FaGoogleScholar } from 'react-icons/fa6'
 import { PhoneIcon } from '@heroicons/react/24/solid'
-import emailjs from 'emailjs-com'
+import emailjs from '@emailjs/browser'
 
 const contactInfo = [
   {
