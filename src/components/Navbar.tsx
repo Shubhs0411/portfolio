@@ -63,7 +63,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               <Image 
-                src="/$icon.svg" 
+                src="/icon.svg" 
                 alt="Logo" 
                 width={32} 
                 height={45} 

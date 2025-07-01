@@ -1,1 +1,1 @@
-self.__REACT_LOADABLE_MANIFEST='{"components/NavbarClient.tsx -> ./Navbar":{"id":9627,"files":["static/chunks/748-f28b5e0a73402880.js","static/chunks/627.fd65d3d285796b86.js"]}}';
+self.__REACT_LOADABLE_MANIFEST='{"components/NavbarClient.tsx -> ./Navbar":{"id":9627,"files":["static/chunks/748-f28b5e0a73402880.js","static/chunks/627.add5caa2f2fd9f25.js"]}}';
