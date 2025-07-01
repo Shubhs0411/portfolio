@@ -72,6 +72,7 @@ export default function About() {
                 alt="Shubham Deshmukh - Data Scientist and Full-Stack Developer"
                 fill
                 className="object-cover"
+                unoptimized
               />
             </div>
 

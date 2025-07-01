@@ -75,6 +75,7 @@ export default function Education() {
                       height={64}
                       className="object-contain max-w-full max-h-full p-2"
                       priority
+                      unoptimized
                     />
                   </div>
                   <div className="flex-grow min-w-0">

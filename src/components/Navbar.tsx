@@ -68,6 +68,7 @@ export default function Navbar() {
                 width={32} 
                 height={45} 
                 className="group-hover:scale-110 transition-transform duration-300"
+                unoptimized
               />
             </Link>
 

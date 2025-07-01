@@ -227,6 +227,7 @@ export default function Projects() {
                         fallback.style.opacity = '1';
                       }
                     }}
+                    unoptimized
                   />
                 </div>
                 
@@ -365,6 +366,7 @@ export default function Projects() {
                         fallback.style.opacity = '1';
                       }
                     }}
+                    unoptimized
                   />
                   {/* Fallback gradient - hidden by default */}
                   <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 opacity-0 transition-opacity duration-300">
