@@ -69,7 +69,7 @@ export default function Education() {
                 <div className="flex items-start md:items-center mb-3 sm:mb-4 space-x-3 sm:space-x-4">
                   <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 flex items-center justify-center bg-white/95 dark:bg-slate-800/80 shadow-md border border-slate-100/80 dark:border-slate-700/70 overflow-hidden">
                     <Image 
-                      src={edu.logo} 
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${edu.logo}`} 
                       alt={`${edu.institution} Logo`} 
                       width={64} 
                       height={64}

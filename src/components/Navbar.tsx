@@ -63,7 +63,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               <Image 
-                src="/icon.svg" 
+                src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon.svg`} 
                 alt="Logo" 
                 width={32} 
                 height={45} 

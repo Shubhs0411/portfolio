@@ -104,12 +104,12 @@ export default function Experience() {
                     <div className="flex space-x-1 sm:space-x-2">
                       {exp.logos.map((logo, i) => (
                         <div key={logo} className="w-8 h-8 sm:w-12 sm:h-12 bg-white border border-slate-200 shadow flex items-center justify-center overflow-hidden">
-                          <Image src={logo} alt={`${exp.company} Logo ${i+1}`} width={32} height={32} className="object-contain max-w-full max-h-full" unoptimized />
+                          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${logo}`} alt={`${exp.company} Logo ${i+1}`} width={32} height={32} className="object-contain max-w-full max-h-full" unoptimized />
                         </div>
                       ))}
                     </div>
                   ) : (
-                    <Image src={exp.logo} alt={`${exp.company} Logo`} width={32} height={32} className="object-contain flex-shrink-0" unoptimized />
+                    <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${exp.logo}`} alt={`${exp.company} Logo`} width={32} height={32} className="object-contain flex-shrink-0" unoptimized />
                   )}
                   <div className="flex-grow">
                     <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-white">{exp.role}</h3>
