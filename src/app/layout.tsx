@@ -16,10 +16,10 @@ export const metadata = {
   authors: [{ name: 'Shubham Deshmukh' }],
   icons: {
     icon: [
+      { url: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon.ico` },
       { url: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/$icon.svg`, type: 'image/svg+xml' },
-      { url: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/favicon.ico` },
     ],
-    apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/$icon.svg`,
+    apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon.ico`,
   },
   openGraph: {
     title: 'Shubham Deshmukh - Software, Machine Learning, and Data Engineer',
