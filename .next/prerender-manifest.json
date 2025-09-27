@@ -5,7 +5,7 @@
       "initialHeaders": {
         "cache-control": "public, max-age=0, must-revalidate",
         "content-type": "image/x-icon",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico/"
       },
       "experimentalBypassFor": [
         {
@@ -58,8 +58,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "836dfb054de5dae676645dcd3d835b03",
-    "previewModeSigningKey": "00a7ebf43aac7457c8654d35d84a0135b713b8d934bc47abbabf3f81d0502a83",
-    "previewModeEncryptionKey": "c8d5ed82e563239ed0e0982d05eddab944676e0aaf11c3eceb73f433ad864062"
+    "previewModeId": "892e50349c3d91aaec778af9a3e379b3",
+    "previewModeSigningKey": "7a822522ba34f5186b48ba2f96b6f5d0a4d018afda4597b6165b1033664c6aec",
+    "previewModeEncryptionKey": "0e9ad9997b963c5046de76864008602da08161527087eb149090ed26a154fec3"
   }
 }
