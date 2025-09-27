@@ -121,7 +121,7 @@ export default function Hero() {
               
               <div className="relative w-48 h-48 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-[400px] md:h-[400px] rounded-3xl overflow-hidden border-4 border-slate-700/50 shadow-2xl mx-auto">
                 <Image
-                  src="/hero-3d.png"
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/hero-3d.png`}
                   alt="3D illustration of a developer working at a laptop with analytics icons"
                   fill
                   className="object-cover"
