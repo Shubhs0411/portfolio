@@ -10,7 +10,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  title: 'Shubham Deshmukh - Software, Machine Learning, and Data Engineer',
+  title: 'Shubham Deshmukh',
   description: 'Portfolio of Shubham Deshmukh, a versatile engineer specializing in Full-Stack Development, Machine Learning, Data Engineering, and Cloud Solutions.',
   keywords: 'Software Engineer, Machine Learning Engineer, Data Engineer, Full-Stack Developer, React, Python, AWS, MLOps',
   authors: [{ name: 'Shubham Deshmukh' }],
@@ -22,7 +22,7 @@ export const metadata = {
     apple: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/icon.ico`,
   },
   openGraph: {
-    title: 'Shubham Deshmukh - Software, Machine Learning, and Data Engineer',
+    title: 'Shubham Deshmukh',
     description: 'Portfolio showcasing expertise in Full-Stack Development, Machine Learning, Data Engineering, and Cloud Solutions.',
     type: 'website',
   },
