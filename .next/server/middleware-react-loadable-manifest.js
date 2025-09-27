@@ -1,1 +1,0 @@
-self.__REACT_LOADABLE_MANIFEST='{"components/NavbarClient.tsx -> ./Navbar":{"id":9627,"files":["static/chunks/748-1b9d3b672527dade.js","static/chunks/627.32472b51cfb67f55.js"]}}';
