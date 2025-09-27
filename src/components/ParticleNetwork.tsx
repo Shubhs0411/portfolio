@@ -14,7 +14,7 @@ function randomBetween(a: number, b: number) {
 
 export default function ParticleNetwork() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const animationRef = useRef<number>();
+  const animationRef = useRef<number | undefined>(undefined);
   const particles = useRef<Particle[]>([]);
 
   useEffect(() => {

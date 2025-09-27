@@ -46,7 +46,7 @@
         256,
         384
       ],
-      "path": "/portfolio/_next/image/",
+      "path": "/portfolio/_next/image",
       "loader": "default",
       "loaderFile": "",
       "domains": [],
@@ -73,7 +73,7 @@
     },
     "basePath": "/portfolio",
     "sassOptions": {},
-    "trailingSlash": true,
+    "trailingSlash": false,
     "i18n": null,
     "productionBrowserSourceMaps": false,
     "excludeDefaultMomentLocales": true,
@@ -88,7 +88,6 @@
     "logging": {},
     "expireTime": 31536000,
     "staticPageGenerationTimeout": 60,
-    "output": "export",
     "modularizeImports": {
       "@mui/icons-material": {
         "transform": "@mui/icons-material/{{member}}"
@@ -97,7 +96,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/shubhamlaxmikantdeshmukh/Desktop/Projects/React-Portfolio",
+    "outputFileTracingRoot": "/Users/shubhamlaxmikantdeshmukh/Desktop/Projects/portfolio",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -280,10 +279,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.ts",
     "turbopack": {
-      "root": "/Users/shubhamlaxmikantdeshmukh/Desktop/Projects/React-Portfolio"
+      "root": "/Users/shubhamlaxmikantdeshmukh/Desktop/Projects/portfolio"
     }
   },
-  "appDir": "/Users/shubhamlaxmikantdeshmukh/Desktop/Projects/React-Portfolio",
+  "appDir": "/Users/shubhamlaxmikantdeshmukh/Desktop/Projects/portfolio",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
