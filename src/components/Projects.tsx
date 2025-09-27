@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Career Compass',
     description: 'Built an intelligent career guidance platform using RAG system with LLaMA-3-70B, ChromaDB, and LangChain over O*NET Data, reducing query latency by 35%. Developed a responsive Next.js/Tailwind frontend with FastAPI-Groq backend integration, boosting user engagement by 30%. Deployed on AWS EC2 with Terraform infrastructure and Tableau analytics dashboards, improving insights access and system scalability by 25%. The platform provides personalized career recommendations based on user skills, interests, and market trends.',
-    image: '/projects/career-compass.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/career-compass.png`,
     github: '',
     demo: 'https://hdl.handle.net/10919/132469',
     tags: ['Next.js', 'FastAPI', 'AWS EC2', 'Terraform', 'LangChain', 'LLaMA-3-70B', 'ChromaDB', 'Tableau'],
@@ -35,13 +35,13 @@ const projects = [
       challenges: 'Optimizing RAG system latency, integrating multiple AI models, AWS deployment',
       achievements: '35% latency reduction, 30% user engagement boost, 25% scalability improvement',
       technologies: ['Next.js', 'FastAPI', 'AWS EC2', 'Terraform', 'LangChain', 'LLaMA-3-70B', 'ChromaDB', 'Tableau', 'Groq API'],
-      images: ['/projects/career-compass-1.png', '/projects/career-compass-2.png', '/projects/career-compass-3.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/career-compass-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/career-compass-2.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/career-compass-3.png`]
     }
   },
   {
     title: 'Human Salivary Proteome (HSP) 3.0 Visualization',
     description: 'Developed comprehensive interactive data visualization tools for biotech research using React and D3.js, significantly improving user experience and accessibility of the HSP dataset. Created dynamic charts, protein interaction networks, and advanced filtering capabilities that enable researchers to explore complex biological data more effectively. Implemented AWS cloud infrastructure with Docker containerization for scalable deployment.',
-    image: '/projects/hspw.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/hspw.png`,
     github: 'https://github.com/JCVenterInstitute/HSPW-V3',
     demo: '',
     tags: ['React', 'D3.js', 'AWS', 'Docker'],
@@ -54,14 +54,14 @@ const projects = [
       challenges: 'Complex data visualization, performance optimization for large datasets',
       achievements: 'Improved data accessibility, enhanced user experience for researchers',
       technologies: ['React', 'D3.js', 'AWS', 'Docker', 'TypeScript', 'CSS3'],
-      images: ['/projects/hspw-1.png', '/projects/hspw-2.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/hspw-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/hspw-2.png`]
     }
   },
   // --- AI/ML/Computer Vision Projects ---
   {
     title: 'Patient Monitoring System Web Application',
     description: 'Led a team to develop a real-time prediction model for patient monitoring using YOLOv4-tiny, Mediapipe, and XGBoost. Achieved 95% accuracy and improved response time for healthcare professionals. The system processes live video streams to detect patient movements, vital signs, and emergency situations, automatically alerting medical staff when intervention is needed.',
-    image: '/projects/pms.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pms.png`,
     github: 'https://github.com/Shubhs0411/Patient-Monitoring-System',
     demo: '',
     tags: ['YOLOv4-tiny', 'Mediapipe', 'XGBoost', 'Flask', 'Computer Vision'],
@@ -74,13 +74,13 @@ const projects = [
       challenges: 'Real-time processing, healthcare compliance, model accuracy',
       achievements: '95% accuracy, improved response time for healthcare professionals',
       technologies: ['YOLOv4-tiny', 'Mediapipe', 'XGBoost', 'Flask', 'Computer Vision', 'Python', 'OpenCV'],
-      images: ['/projects/pms-1.png', '/projects/pms-2.png', '/projects/pms-3.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pms-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pms-2.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pms-3.png`]
     }
   },
   {
     title: 'Pose Estimation & Analysis System',
     description: 'Developed an advanced pose estimation system using MediaPipe and OpenCV for real-time human pose analysis. The system achieved 32 citations in academic research and has been used in multiple healthcare and sports analytics applications. Features include multi-person pose tracking, gesture recognition, and biomechanical analysis.',
-    image: '/projects/pose-estimation.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pose-estimation.png`,
     github: 'https://github.com/Shubhs0411/Pose-Estimation-System',
     demo: '',
     tags: ['MediaPipe', 'OpenCV', 'Pose Estimation', 'Computer Vision', 'Research'],
@@ -93,13 +93,13 @@ const projects = [
       challenges: 'Real-time multi-person tracking, accuracy optimization, research publication',
       achievements: '32 academic citations, 98% pose detection accuracy, published in IEEE conference',
       technologies: ['MediaPipe', 'OpenCV', 'Python', 'TensorFlow', 'NumPy', 'Computer Vision', 'Research'],
-      images: ['/projects/pose-1.png', '/projects/pose-2.png', '/projects/pose-3.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pose-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pose-2.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/pose-3.png`]
     }
   },
   {
     title: 'Blind Tourist Guide using VLMs',
     description: 'Developed an assistive system for visually impaired tourists using Vision-Language Models (VLMs) to provide real-time scene understanding and navigation assistance.',
-    image: '/projects/blind-tourist-guide.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/blind-tourist-guide.png`,
     github: '',
     demo: '',
     tags: ['Vision-Language Models', 'AI', 'Assistive Tech', 'Navigation'],
@@ -112,13 +112,13 @@ const projects = [
       challenges: 'Real-time VLM processing, accessibility requirements',
       achievements: 'Functional assistive system for visually impaired users',
       technologies: ['Vision-Language Models', 'Python', 'Computer Vision', 'Accessibility Tech'],
-      images: ['/projects/blind-guide-1.png', '/projects/blind-guide-2.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/blind-guide-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/blind-guide-2.png`]
     }
   },
   {
     title: 'Document Summarizer',
     description: 'Built an AI-powered document summarization tool leveraging transformer models to generate concise and accurate summaries for long-form documents.',
-    image: '/projects/document-summarizer.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/document-summarizer.png`,
     github: '',
     demo: '',
     tags: ['NLP', 'Transformers', 'Summarization', 'AI'],
@@ -131,14 +131,14 @@ const projects = [
       challenges: 'Transformer model optimization, summary quality',
       achievements: 'Accurate document summarization tool',
       technologies: ['NLP', 'Transformers', 'Python', 'Hugging Face', 'Summarization'],
-      images: ['/projects/summarizer-1.png', '/projects/summarizer-2.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/summarizer-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/summarizer-2.png`]
     }
   },
   // --- Web Development Projects ---
   {
     title: 'React-Portfolio',
     description: 'A dynamic portfolio built using React, JavaScript, HTML, and CSS, showcasing my projects and skills in front-end development and design.',
-    image: '/projects/react-portfolio.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/react-portfolio.png`,
     github: 'https://github.com/Shubhs0411/React-Portfolio',
     demo: '',
     tags: ['React', 'JavaScript', 'HTML', 'CSS'],
@@ -151,7 +151,7 @@ const projects = [
       challenges: 'Responsive design, modern UI/UX implementation',
       achievements: 'Professional portfolio showcasing skills and projects',
       technologies: ['React', 'JavaScript', 'HTML', 'CSS', 'Responsive Design'],
-      images: ['/projects/react-portfolio-1.png', '/projects/react-portfolio-2.png']
+      images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/react-portfolio-1.png`, `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/projects/react-portfolio-2.png`]
     }
   },
 ]
