@@ -82,7 +82,7 @@ export default function Navbar() {
                 >
                   <Link
                     href={item.href}
-                    className="relative text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300"
+                    className="relative text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 font-bold transition-colors duration-300"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
@@ -149,7 +149,7 @@ export default function Navbar() {
                     >
                       <Link
                         href={item.href}
-                        className="block text-center text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors duration-300 py-3 rounded-lg hover:bg-white/5 dark:hover:bg-slate-700/30 text-base sm:text-lg"
+                        className="block text-center text-slate-800 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 font-bold transition-colors duration-300 py-3 rounded-lg hover:bg-white/5 dark:hover:bg-slate-700/30 text-base sm:text-lg"
                         onClick={() => setMenuOpen(false)}
                       >
                         {item.label}

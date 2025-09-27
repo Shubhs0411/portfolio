@@ -52,7 +52,7 @@ export default function Certifications() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
           <span className="gradient-text">Certifications</span>
         </h2>
-        <p className="text-base sm:text-lg max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg max-w-3xl mx-auto text-slate-700 dark:text-white">
           Recognized certifications that validate my skills and expertise.
         </p>
       </motion.div>

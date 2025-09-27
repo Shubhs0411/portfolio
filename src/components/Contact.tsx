@@ -114,7 +114,7 @@ export default function Contact() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
           Let's <span className="gradient-text">Connect</span>
         </h2>
-        <p className="text-base sm:text-lg max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg max-w-2xl mx-auto text-slate-700 dark:text-white">
           Ready to bring your ideas to life? Let's discuss how we can work together to create something amazing.
         </p>
       </motion.div>
@@ -136,7 +136,7 @@ export default function Contact() {
 
             <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-6">
               <div>
-                <label htmlFor="user_name" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1 sm:mb-2">
+                <label htmlFor="user_name" className="block text-sm font-medium text-slate-700 dark:text-slate-700 mb-1 sm:mb-2">
                   Name
                 </label>
                 <input
@@ -152,7 +152,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="user_email" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1 sm:mb-2">
+                <label htmlFor="user_email" className="block text-sm font-medium text-slate-700 dark:text-slate-700 mb-1 sm:mb-2">
                   Email
                 </label>
                 <input
@@ -168,7 +168,7 @@ export default function Contact() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1 sm:mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-slate-700 dark:text-slate-700 mb-1 sm:mb-2">
                   Message
                 </label>
                 <textarea
@@ -247,10 +247,10 @@ export default function Contact() {
         >
           {/* Contact Information */}
           <div className="space-y-6">
-            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100">
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
               Get in touch
             </h3>
-            <p className="text-sm sm:text-base">
+            <p className="text-sm sm:text-base text-slate-700 dark:!text-white">
               I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and innovation.
             </p>
             
@@ -270,8 +270,8 @@ export default function Contact() {
                     <info.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                   </div>
                   <div className="min-w-0 flex-1">
-                    <div className="font-semibold text-slate-900 dark:text-slate-100 text-sm sm:text-base">{info.label}</div>
-                    <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-400">{info.value}</div>
+                    <div className="font-semibold text-slate-900 dark:text-slate-900 text-sm sm:text-base">{info.label}</div>
+                    <div className="text-xs sm:text-sm text-slate-600 dark:text-slate-600">{info.value}</div>
                   </div>
                 </motion.a>
               ))}
@@ -280,10 +280,10 @@ export default function Contact() {
 
           {/* Social Links */}
           <div className="space-y-6">
-            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-slate-100">
+            <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
               Follow me
             </h3>
-            <p className="text-sm sm:text-base">
+            <p className="text-sm sm:text-base text-slate-700 dark:!text-white">
               Connect with me on social media to stay updated with my latest projects and insights.
             </p>
             
@@ -318,9 +318,9 @@ export default function Contact() {
           >
             <div className="flex items-center space-x-3 mb-3">
               <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-              <span className="font-semibold text-slate-900 dark:text-slate-100 text-sm sm:text-base">Available for opportunities</span>
+              <span className="font-semibold text-slate-900 dark:text-white text-sm sm:text-base">Available for opportunities</span>
             </div>
-            <p className="text-xs sm:text-sm">
+            <p className="text-xs sm:text-sm text-slate-700 dark:!text-white">
               I'm currently accepting new projects and collaborations. Let's discuss how we can work together!
             </p>
           </motion.div>

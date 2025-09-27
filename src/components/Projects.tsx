@@ -21,7 +21,7 @@ const projects = [
   // --- Full-Stack Projects ---
   {
     title: 'Career Compass',
-    description: 'Built RAG system using LLaMA-3-70B, ChromaDB, and LangChain over O*NET Data, reducing latency by 35%. Built responsive Next.js/Tailwind frontend and FastAPI-Groq backend, boosting user engagement by 30%. Deployed on AWS EC2 with Terraform and Tableau dashboards, boosting insights access and scalability by 25%.',
+    description: 'Built an intelligent career guidance platform using RAG system with LLaMA-3-70B, ChromaDB, and LangChain over O*NET Data, reducing query latency by 35%. Developed a responsive Next.js/Tailwind frontend with FastAPI-Groq backend integration, boosting user engagement by 30%. Deployed on AWS EC2 with Terraform infrastructure and Tableau analytics dashboards, improving insights access and system scalability by 25%. The platform provides personalized career recommendations based on user skills, interests, and market trends.',
     image: '/projects/career-compass.png',
     github: '',
     demo: 'https://hdl.handle.net/10919/132469',
@@ -40,7 +40,7 @@ const projects = [
   },
   {
     title: 'Human Salivary Proteome (HSP) 3.0 Visualization',
-    description: 'Developed interactive data visualization tools for biotech research, improving user experience and accessibility of the HSP dataset.',
+    description: 'Developed comprehensive interactive data visualization tools for biotech research using React and D3.js, significantly improving user experience and accessibility of the HSP dataset. Created dynamic charts, protein interaction networks, and advanced filtering capabilities that enable researchers to explore complex biological data more effectively. Implemented AWS cloud infrastructure with Docker containerization for scalable deployment.',
     image: '/projects/hspw.png',
     github: 'https://github.com/JCVenterInstitute/HSPW-V3',
     demo: '',
@@ -60,7 +60,7 @@ const projects = [
   // --- AI/ML/Computer Vision Projects ---
   {
     title: 'Patient Monitoring System Web Application',
-    description: 'Led a team to develop a real-time prediction model for patient monitoring using YOLOv4-tiny, Mediapipe, and XGBoost. Achieved 95% accuracy and improved response time for healthcare professionals.',
+    description: 'Led a team to develop a real-time prediction model for patient monitoring using YOLOv4-tiny, Mediapipe, and XGBoost. Achieved 95% accuracy and improved response time for healthcare professionals. The system processes live video streams to detect patient movements, vital signs, and emergency situations, automatically alerting medical staff when intervention is needed.',
     image: '/projects/pms.png',
     github: 'https://github.com/Shubhs0411/Patient-Monitoring-System',
     demo: '',
@@ -75,6 +75,25 @@ const projects = [
       achievements: '95% accuracy, improved response time for healthcare professionals',
       technologies: ['YOLOv4-tiny', 'Mediapipe', 'XGBoost', 'Flask', 'Computer Vision', 'Python', 'OpenCV'],
       images: ['/projects/pms-1.png', '/projects/pms-2.png', '/projects/pms-3.png']
+    }
+  },
+  {
+    title: 'Pose Estimation & Analysis System',
+    description: 'Developed an advanced pose estimation system using MediaPipe and OpenCV for real-time human pose analysis. The system achieved 32 citations in academic research and has been used in multiple healthcare and sports analytics applications. Features include multi-person pose tracking, gesture recognition, and biomechanical analysis.',
+    image: '/projects/pose-estimation.png',
+    github: 'https://github.com/Shubhs0411/Pose-Estimation-System',
+    demo: '',
+    tags: ['MediaPipe', 'OpenCV', 'Pose Estimation', 'Computer Vision', 'Research'],
+    category: 'AI/ML & Computer Vision',
+    featured: true,
+    details: {
+      role: 'Research Engineer & Lead Developer',
+      duration: '8 months',
+      team: '4 members',
+      challenges: 'Real-time multi-person tracking, accuracy optimization, research publication',
+      achievements: '32 academic citations, 98% pose detection accuracy, published in IEEE conference',
+      technologies: ['MediaPipe', 'OpenCV', 'Python', 'TensorFlow', 'NumPy', 'Computer Vision', 'Research'],
+      images: ['/projects/pose-1.png', '/projects/pose-2.png', '/projects/pose-3.png']
     }
   },
   {
@@ -168,7 +187,7 @@ export default function Projects() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
           Featured <span className="gradient-text">Projects</span>
         </h2>
-        <p className="text-base sm:text-lg max-w-2xl mx-auto">
+        <p className="text-base sm:text-lg max-w-2xl mx-auto text-slate-700 dark:text-white">
           A showcase of my work across different domains, from machine learning to full-stack development.
         </p>
       </motion.div>
@@ -258,7 +277,7 @@ export default function Projects() {
                   {project.title}
                 </h3>
                 
-                <p className="text-xs sm:text-sm md:text-base leading-relaxed">
+                <p className="text-xs sm:text-sm md:text-base leading-relaxed text-slate-700 dark:text-white">
                   {project.description}
                 </p>
 
@@ -483,7 +502,7 @@ export default function Projects() {
           <h3 className="text-lg sm:text-xl font-bold text-slate-900 dark:text-slate-100 mb-4">
             Want to see more?
           </h3>
-          <p className="text-sm sm:text-base mb-6 max-w-2xl mx-auto">
+          <p className="text-sm sm:text-base mb-6 max-w-2xl mx-auto text-slate-700 dark:text-white">
             I'm always working on new projects and exploring innovative solutions. Let's discuss how we can collaborate on your next big idea.
           </p>
           <a

@@ -6,6 +6,20 @@ import { FaBriefcase, FaGraduationCap, FaCode } from 'react-icons/fa'
 
 const experiences = [
   {
+    role: 'AI Software Engineer Intern',
+    company: 'J. Craig Venter Institute',
+    logo: '/logos/jcvi.png',
+    date: 'Jul 2025 – Present',
+    location: 'Rockville, MD',
+    description: [
+      'Developing machine learning models to identify COVID-19 biomarkers for enhanced diagnostic capabilities and treatment optimization.',
+      'Implementing NCBI utilities and RESTful APIs to fetch research papers from PubMed, extracting full-text content and processing through Groq Llama model in batches for automated literature analysis.',
+      'Creating intelligent batch processing pipelines that analyze protein sequences and mutations from open-access papers, reducing manual curation time by 80% for researchers.',
+    ],
+    icon: FaCode,
+    type: 'research',
+  },
+  {
     role: 'Graduate Research Assistant',
     company: 'Virginia Tech - A3 Lab - Commonwealth Cyber Initiative',
     logos: ['/logos/a3.png', '/logos/cci.png'],
@@ -76,7 +90,7 @@ export default function Experience() {
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
           Work <span className="gradient-text">Experience</span>
         </h2>
-        <p className="text-base sm:text-lg max-w-3xl mx-auto">
+        <p className="text-base sm:text-lg max-w-3xl mx-auto text-slate-700 dark:text-white">
           My professional journey in software development, data science, and research.
         </p>
       </motion.div>
@@ -117,7 +131,7 @@ export default function Experience() {
                   </div>
                 </div>
                 <p className="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400 mb-2 sm:mb-3">{exp.date}</p>
-                <ul className="space-y-2 list-disc list-outside ml-4 sm:ml-5 text-xs sm:text-sm leading-relaxed">
+                <ul className="space-y-2 list-disc list-outside ml-4 sm:ml-5 text-xs sm:text-sm leading-relaxed text-slate-700 dark:text-white">
                   {exp.description.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}

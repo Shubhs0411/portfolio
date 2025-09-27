@@ -14,7 +14,7 @@ const publications = [
       'Comparison of CNNs, OpenPose, and MediaPipe on COCO and MPII datasets.',
     ],
     link: 'https://link.springer.com/article/10.1007/s42979-022-01567-2',
-    citations: 29,
+    citations: 32,
   },
   {
     title: 'SANIP: Shopping Assistant and Navigation for the Visually Impaired',

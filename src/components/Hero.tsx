@@ -57,10 +57,10 @@ export default function Hero() {
               <p className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-pink-500 to-yellow-400 bg-clip-text text-transparent mb-2 tracking-wide font-sans">
                 <Typewriter
                   words={[
+                    'AI Software Engineer',
                     'Machine Learning Engineer',
                     'Software Engineer',
                     'Full Stack Engineer',
-                    'Data Engineer',
                   ]}
                   loop
                   cursor
