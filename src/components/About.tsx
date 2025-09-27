@@ -74,17 +74,17 @@ export default function About() {
             <div className="relative w-40 h-40 xs:w-64 xs:h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-3xl overflow-hidden border-4 border-slate-200 dark:border-slate-700 shadow-2xl mx-auto">
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/profile.jpeg`}
-                alt="Shubham Deshmukh - Data Scientist and Full-Stack Developer"
+                alt="Shubham Deshmukh - AI Software Engineer and Software Engineer"
                 fill
                 className="object-cover"
               />
             </div>
 
             <div className="absolute -top-4 -right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-2 rounded-full text-xs font-semibold shadow-lg animate-float">
-              Data Scientist
+              AI Engineer
             </div>
             <div className="absolute -bottom-4 -left-4 bg-gradient-to-r from-green-600 to-blue-600 text-white px-3 py-2 rounded-full text-xs font-semibold shadow-lg animate-float" style={{ animationDelay: '1s' }}>
-              Full-Stack Dev
+              Software Engineer
             </div>
           </div>
         </motion.div>
