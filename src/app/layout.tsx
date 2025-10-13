@@ -58,7 +58,7 @@ export default function RootLayout({
 
           {/* Floating Resume Download Button */}
           <a
-            href="https://drive.google.com/file/d/1q3S0IQsr2kzXn2iAWMxly_S0L_H63hU1/view?usp=sharing"
+            href="https://drive.google.com/uc?export=download&id=1q3S0IQsr2kzXn2iAWMxly_S0L_H63hU1"
             target="_blank"
             rel="noopener noreferrer"
             className="fixed bottom-6 right-6 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white p-4 rounded-full shadow-2xl transition-all duration-300 z-50 hover:scale-110 animate-pulse-glow"
